@@ -45,6 +45,7 @@ class TestBus < MiniTest::Test
     @stop1.add_person(@person2)
     @bus.pick_up_from_stop(@stop1)
     assert_equal(2, @bus.passengers.length())
+    assert_equal(0, @stop1.queue.length())
   end
 
 end
