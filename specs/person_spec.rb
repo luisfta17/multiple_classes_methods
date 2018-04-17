@@ -6,6 +6,7 @@ require_relative("../person")
 
 class TestPerson < MiniTest::Test
   def setup
+    @person2 = Person.new("Ruairidh", 24)
     @person1 = Person.new("Luis", 24)
   end
 
